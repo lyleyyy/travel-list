@@ -1,38 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@300;500;600;700&display=swap");
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+}
+
+.heading {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f4a226;
+  width: 100%;
+  font-family: "Monoton", sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  padding: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.heading h1 {
+  line-height: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.items-add-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #e5771f;
+  font-family: "Quicksand";
+  font-weight: 600;
+  padding: 5px 0px;
+  font-weight: bolder;
+}
+
+select,
+input,
+button {
+  background-color: #ffebb3;
+  border: none;
+  border-radius: 10px;
+  padding: 7px 15px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.items-add-bar input {
+  width: 15%;
+  text-align: left;
+}
+
+.items-add-bar button {
+  background-color: #76c7ad;
+}
+
+.items-add-bar h3 {
+  margin-right: 10px;
+}
+
+.items-list {
+  background-color: #5a3e2b;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.items {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #ffebb3;
+}
+
+.items input {
+  margin-right: 10px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item button {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+
+.list-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.items-list-description {
+  background-color: #76c7ad;
+  width: 100%;
+  text-align: center;
+  font-family: "Quicksand";
+  font-weight: bolder;
+  font-style: italic;
 }
